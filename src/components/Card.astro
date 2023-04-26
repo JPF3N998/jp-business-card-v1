@@ -7,12 +7,28 @@
 >
   <main class="content">
     <section class="centered">
-      <picture id="profile">
-        <img src="/jp-pp.png" />
+      <picture class="profile">
+        <img
+          src="https://avatars.githubusercontent.com/u/37031810?s=400&u=6ccb3ed9b193d9dce7efd6b4fa5b300585ec1b8f&v=4"
+        />
       </picture>
     </section>
 
-    <section class="information">Information</section>
+    <section class="information">
+      <div>
+        <label>Name:</label>
+        <p>Jose Pablo Feng</p>
+      </div>
+      <div>
+        <label>Email:</label>
+        <p>jpfeng-dev@proton.me</p>
+      </div>
+
+      <div>
+        <label>Role:</label>
+        <p>Frontend Engineer</p>
+      </div>
+    </section>
 
     <section class="socials centered">
       <a href="https://github.com/JPF3N998">
@@ -42,7 +58,7 @@
       </a>
     </section>
   </main>
-  <footer class="centered">From 🇨🇷 to the 🌎</footer>
+  <footer class="centered footerText">From 🇨🇷 to the 🌎</footer>
 </div>
 
 <style>
@@ -56,11 +72,30 @@
 
   .content {
     display: grid;
-    grid-template: 1fr 1.5fr 1fr / 1fr;
+    grid-template: 1fr 3fr 1fr / 1fr;
     height: 100%;
   }
 
+  .footerText {
+    font-size: 0.7rem;
+    font-style: italic;
+  }
+
+  /* Profile Section */
+
+  .profile > img {
+    transform: scaleX(-1);
+  }
+
   /* Information Section */
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    row-gap: 1rem;
+    justify-content: center;
+  }
 
   /* Socials Section */
   .socials {
