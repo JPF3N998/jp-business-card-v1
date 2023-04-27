@@ -24,6 +24,8 @@ const { title } = Astro.props;
 
 <style is:global>
   @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200")
+
   html,
   body {
     height: 100%;
@@ -35,6 +37,18 @@ const { title } = Astro.props;
       #1f1f23,
       #222226
     );
+  }
+
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    color: #EF9B0F;
+  }
+
+  a:visited {
+    color: inherit;
   }
 
   .centered {
